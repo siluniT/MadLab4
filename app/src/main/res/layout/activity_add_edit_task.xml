@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEditTaskActivity"
+    android:background="@drawable/flowers">
+
+    <EditText
+        android:id="@+id/idEditTaskTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#8BC34A"
+        android:hint="Enter Task Title"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/idEditTaskDescription"
+        android:layout_width="387dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/idEditTaskTitle"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#8BC34A"
+        android:gravity="start|top"
+        android:hint="Enter Task Description"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/idEditTaskPriority"
+        android:layout_width="394dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/idEditTaskDescription"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#8BC34A"
+        android:gravity="start|top"
+        android:hint="Enter Task Priority"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/idEditTaskDueDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/idBtnAddUpdate"
+        android:layout_below="@id/idEditTaskPriority"
+        android:layout_margin="10dp"
+        android:background="#DF8BC34A"
+        android:gravity="start|top"
+        android:hint="Enter Task Due Date"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <Button
+        android:id="@+id/idBtnAddUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:text="Button"
+        android:textAllCaps="false" />
+
+
+</RelativeLayout>
